@@ -8,3 +8,5 @@ error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors', 'On');
 ini_set('error_log', LOGS_DIR.'php.log');
 ini_set('session.auto_start', 0);
+
+define('APP_SECRET', 'a49958a5709e32704e9eef92d996b28e');

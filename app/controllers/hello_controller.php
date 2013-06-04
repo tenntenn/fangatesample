@@ -3,12 +3,14 @@ class HelloController extends AppController
 {
     public function index()
     {
-		if (Fungate::isFun()) {
-			$this->redirect('hello/nofun');
+		if (!Fangate::isFan()) {
+			// リダイレクト
+			header("Location: hello/nofan");
+			exit();
 		}
     }
 	
-	public function nofun()
+	public function nofan()
 	{
 	}
 }
